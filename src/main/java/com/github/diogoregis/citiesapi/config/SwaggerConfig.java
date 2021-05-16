@@ -23,8 +23,8 @@ public class SwaggerConfig {
     public Docket productApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.github..diogoregis.citiesapi"))
-                .paths(regex("/citiesapi.*"))
+                .apis(RequestHandlerSelectors.basePackage("com.github.diogoregis.citiesapi"))
+                .paths(regex("/.*"))
                 .build()
                 .apiInfo(metaInfo());
     }
@@ -33,11 +33,11 @@ public class SwaggerConfig {
 	private ApiInfo metaInfo() {
 
         ApiInfo apiInfo = new ApiInfo(
-                "Quitanda do Bairro API",
+                "Cities API",
                 "API REST - DIO - Cálculo de distância entre cidade, por meio da latitude e longitude.",
-                "1.0.5",
+                "1.0.2",
                 "Terms of Service",
-                new Contact("DIOGO REGIS", "www.diogoregis.com.br",
+                new Contact("DIOGO REGIS", "https://github.com/diogoregis/cities-api",
                         "diogo.regis.silva@gmail.com"),
                 "Apache License Version 2.0",
                 "https://www.apache.org/licenses/LICENSE-2.0", new ArrayList<VendorExtension>()
