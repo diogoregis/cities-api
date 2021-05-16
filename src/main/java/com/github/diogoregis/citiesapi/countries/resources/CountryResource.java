@@ -20,7 +20,7 @@ public class CountryResource {
   }
 
   @GetMapping("/countries")
-  @ApiOperation(value="Retorna lista completa com todos os Pais")
+  @ApiOperation(value="Retorna lista completa com todos os Paises")
   public List<Country> cities() {
 
     return repository.findAll();
