@@ -16,7 +16,11 @@ Essa API visa realizar o cálculo da distancia entre duas cidades, considerando 
 
 Após populado o banco e startado, API pode ser acessada browser:
 
-http://localhost:8080/swagger.html
+```shell script
+http://localhost:8080/swagger-ui.html
+```
+
+http://localhost:8080/swagger-ui.html
 
 
 
